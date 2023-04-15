@@ -1,0 +1,33 @@
+//====================================================================================================
+.footer {
+   @include adaptiveValue("padding-top", 40, 20);
+   @include adaptiveValue("padding-bottom", 40, 20);   
+   color: var(--accent);
+   line-height: 137.5%; /* 22/16 */
+   background: #d2d5b6;
+   // .footer__container
+   &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+   // .footer__copy
+   &__copy {
+   }
+   // .footer__items
+   &__items {
+      display: flex;
+      align-items: center;
+      column-gap: rem(24);
+   }
+   // .footer__item
+   &__item {
+      text-decoration-line: underline;
+      transition: color 0.3s;
+      &:hover {
+         color: #2e2a2a;
+      }
+   }
+}
+
+//====================================================================================================
