@@ -8,10 +8,14 @@
    <div class="wrapper">
       @@include('html/_header.htm',{})
       <main class="page">
+
+
+
+
          <section class="page__catalog catalog">
             <div class="catalog__container">
                <div class="catalog__title">Produk Katalog</div>
-               <div data-tabs class="catalog__tabs tabs">
+               <div data-tabs data-tabs-animate="1000" class="catalog__tabs tabs">
                   <nav data-tabs-titles class="tabs__navigation">
                      <button type="button" class="tabs__title _tab-active">Meja</button>
                      <button type="button" class="tabs__title">Kursi</button>
@@ -22,10 +26,275 @@
                   </nav>
                   <div data-tabs-body class="tabs__content">
                      <div class="tabs__body">
-                        Meja
+                        <div class="tabs__items">
+                           <div class="tabs__item item-tabs">
+                              <div class="item-tabs__card">
+                                 <div class="item-tabs__options">
+                                    <a href="" class="item-tabs__option item-tabs__option_red">Diskon 10%</a>
+                                 </div>
+                                 <a href="" class="item-tabs__image">
+                                    <img src="@img/catalog/meja/image-01.png" alt="Image">
+                                 </a>
+                                 <div class="item-tabs__colors">
+                                    <button type="button" class="item-tabs__color item-tabs__color_beige _active"></button>
+                                    <button type="button" class="item-tabs__color item-tabs__color_yellow"></button>
+                                    <button type="button" class="item-tabs__color item-tabs__color_black"></button>
+                                    <!-- <a href="" class="item-tabs__color item-tabs__color_beige _active"></a>
+                                    <a href="" class="item-tabs__color item-tabs__color_yellow"></a>
+                                    <a href="" class="item-tabs__color item-tabs__color_black"></a> -->
+                                 </div>
+                              </div>
+                              <div class="item-tabs__info">
+                                 <div class="item-tabs__name">Arkelstrop</div>
+                                 <div class="item-tabs__prices">
+                                    <div class="item-tabs__price">Rp. 2.699.100</div>
+                                    <div class="item-tabs__price-old">Rp. 2.999.000</div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="tabs__item item-tabs">
+                              <div class="item-tabs__card">
+                                 <div class="item-tabs__options">
+                                    <a href="" class="item-tabs__option">Produk Baru</a>
+                                 </div>
+                                 <a href="" class="item-tabs__image">
+                                    <img src="@img/catalog/meja/image-02.png" alt="Image">
+                                 </a>
+                              </div>
+                              <div class="item-tabs__colors">
+                                 <a href="" class="item-tabs__color item-tabs__color_beige"></a>
+                                 <a href="" class="item-tabs__color item-tabs__color_yellow"></a>
+                              </div>
+                              <div class="item-tabs__info">
+                                 <div class="item-tabs__name">Lillasen</div>
+                                 <div class="item-tabs__prices">
+                                    <div class="item-tabs__price">Rp. 2.499.100</div>
+                                    <div class="item-tabs__price-old"></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="tabs__item item-tabs">
+                              <div class="item-tabs__card">
+                                 <div class="item-tabs__options">
+                                    <a href="" class="item-tabs__option">Produk Baru</a>
+                                 </div>
+                                 <a href="" class="item-tabs__image">
+                                    <img src="@img/catalog/meja/image-03.png" alt="Image">
+                                 </a>
+                                 <div class="item-tabs__colors">
+                                    <a href="" class="item-tabs__color item-tabs__color_black _active"></a>
+                                    <a href="" class="item-tabs__color item-tabs__color_grey"></a>
+                                 </div>
+                              </div>
+                              <div class="item-tabs__info">
+                                 <div class="item-tabs__name">Micke</div>
+                                 <div class="item-tabs__prices">
+                                    <div class="item-tabs__price">Rp. 999.100</div>
+                                    <div class="item-tabs__price-old"></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="tabs__item item-tabs">
+                              <div class="item-tabs__card">
+                                 <div class="item-tabs__options">
+                                    <!-- <a href="" class="item-tabs__option item-tabs__option_red"></a> -->
+                                 </div>
+                                 <a href="" class="item-tabs__image">
+                                    <img src="@img/catalog/meja/image-04.png" alt="Image">
+                                 </a>
+                              </div>
+                              <div class="item-tabs__colors">
+                                 <a href="" class="item-tabs__color item-tabs__color_beige"></a>
+                                 <a href="" class="item-tabs__color item-tabs__color_grey"></a>
+                                 <a href="" class="item-tabs__color item-tabs__color_black"></a>
+                              </div>
+                              <div class="item-tabs__info">
+                                 <div class="item-tabs__name">Tilslag</div>
+                                 <div class="item-tabs__prices">
+                                    <div class="item-tabs__price">Rp. 1.499.100</div>
+                                    <div class="item-tabs__price-old"></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="tabs__item item-tabs">
+                              <div class="item-tabs__card">
+                                 <div class="item-tabs__options">
+                                    <!-- <a href="" class="item-tabs__option"></a> -->
+                                 </div>
+                                 <a href="" class="item-tabs__image">
+                                    <img src="@img/catalog/meja/image-05.png" alt="Image">
+                                 </a>
+                              </div>
+                              <div class="item-tabs__colors">
+                                 <a href="" class="item-tabs__color item-tabs__color_black"></a>
+                                 <a href="" class="item-tabs__color item-tabs__color_beige"></a>
+                                 <a href="" class="item-tabs__color item-tabs__color_grey"></a>
+                              </div>
+                              <div class="item-tabs__info">
+                                 <div class="item-tabs__name">Lagkapten/Adils</div>
+                                 <div class="item-tabs__prices">
+                                    <div class="item-tabs__price">Rp. 849.100</div>
+                                    <div class="item-tabs__price-old"></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="tabs__item item-tabs">
+                              <div class="item-tabs__card">
+                                 <div class="item-tabs__options">
+                                    <!-- <a href="" class="item-tabs__option"></a> -->
+                                 </div>
+                                 <a href="" class="item-tabs__image">
+                                    <img src="@img/catalog/meja/image-06.png" alt="Image">
+                                 </a>
+                              </div>
+                              <div class="item-tabs__colors">
+                                 <a href="" class="item-tabs__color item-tabs__color_grey"></a>
+                                 <a href="" class="item-tabs__color item-tabs__color_beige"></a>
+                                 <a href="" class="item-tabs__color item-tabs__color_black"></a>
+                              </div>
+                              <div class="item-tabs__info">
+                                 <div class="item-tabs__name">Adils/Linmon</div>
+                                 <div class="item-tabs__prices">
+                                    <div class="item-tabs__price">Rp. 499.100</div>
+                                    <div class="item-tabs__price-old"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
                      </div>
                      <div class="tabs__body">
-                        Kursi
+                        <div class="tabs__items">
+                           <div class="tabs__item item-tabs">
+                              <div class="item-tabs__card">
+                                 <div class="item-tabs__options">
+                                    <a href="" class="item-tabs__option item-tabs__option_red">Diskon 10%</a>
+                                 </div>
+                                 <a href="" class="item-tabs__image">
+                                    <img src="@img/catalog/kursi/image-01.png" alt="Image">
+                                 </a>
+                              </div>
+                              <div class="item-tabs__colors">
+                                 <a href="" class="item-tabs__color item-tabs__color_beige"></a>
+                                 <a href="" class="item-tabs__color item-tabs__color_yellow"></a>
+                                 <a href="" class="item-tabs__color item-tabs__color_black"></a>
+                              </div>
+                              <div class="item-tabs__info">
+                                 <div class="item-tabs__name">Arkelstrop</div>
+                                 <div class="item-tabs__prices">
+                                    <div class="item-tabs__price">Rp. 2.699.100</div>
+                                    <div class="item-tabs__price-old">Rp. 2.999.000</div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="tabs__item item-tabs">
+                              <div class="item-tabs__card">
+                                 <div class="item-tabs__options">
+                                    <a href="" class="item-tabs__option">Produk Baru</a>
+                                 </div>
+                                 <a href="" class="item-tabs__image">
+                                    <img src="@img/catalog/kursi/image-02.png" alt="Image">
+                                 </a>
+                              </div>
+                              <div class="item-tabs__colors">
+                                 <a href="" class="item-tabs__color item-tabs__color_beige"></a>
+                                 <a href="" class="item-tabs__color item-tabs__color_grey"></a>
+                                 <a href="" class="item-tabs__color item-tabs__color_black"></a>
+                              </div>                              
+                              <div class="item-tabs__info">
+                                 <div class="item-tabs__name">Lillasen</div>
+                                 <div class="item-tabs__prices">
+                                    <div class="item-tabs__price">Rp. 2.499.100</div>
+                                    <div class="item-tabs__price-old"></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="tabs__item item-tabs">
+                              <div class="item-tabs__card">
+                                 <div class="item-tabs__options">
+                                    <a href="" class="item-tabs__option">Produk Baru</a>
+                                 </div>
+                                 <a href="" class="item-tabs__image">
+                                    <img src="@img/catalog/kursi/image-07.png" alt="Image">
+                                 </a>
+                              </div>
+                              <div class="item-tabs__colors">
+                                 <a href="" class="item-tabs__color item-tabs__color_beige"></a>
+                                 <a href="" class="item-tabs__color item-tabs__color_yellow"></a>
+                              </div>
+                              <div class="item-tabs__info">
+                                 <div class="item-tabs__name">Micke</div>
+                                 <div class="item-tabs__prices">
+                                    <div class="item-tabs__price">Rp. 999.100</div>
+                                    <div class="item-tabs__price-old"></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="tabs__item item-tabs">
+                              <div class="item-tabs__card">
+                                 <div class="item-tabs__options">
+                                    <!-- <a href="" class="item-tabs__option item-tabs__option_red"></a> -->
+                                 </div>
+                                 <a href="" class="item-tabs__image">
+                                    <img src="@img/catalog/kursi/image-04.png" alt="Image">
+                                 </a>
+                                 <div class="item-tabs__colors">
+                                    <a href="" class="item-tabs__color item-tabs__color_grey"></a>
+                                    <a href="" class="item-tabs__color item-tabs__color_yellow"></a>
+                                    <a href="" class="item-tabs__color item-tabs__color_black"></a>
+                                 </div>
+                              </div>
+                              <div class="item-tabs__info">
+                                 <div class="item-tabs__name">Tilslag</div>
+                                 <div class="item-tabs__prices">
+                                    <div class="item-tabs__price">Rp. 1.499.100</div>
+                                    <div class="item-tabs__price-old"></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="tabs__item item-tabs">
+                              <div class="item-tabs__card">
+                                 <div class="item-tabs__options">
+                                    <!-- <a href="" class="item-tabs__option"></a> -->
+                                 </div>
+                                 <a href="" class="item-tabs__image">
+                                    <img src="@img/catalog/kursi/image-05.png" alt="Image">
+                                 </a>
+                              </div>
+                              <div class="item-tabs__colors">
+                                 <a href="" class="item-tabs__color item-tabs__color_grey"></a>
+                                 <a href="" class="item-tabs__color item-tabs__color_beige"></a>
+                                 <a href="" class="item-tabs__color item-tabs__color_black"></a>
+                              </div>                              
+                              <div class="item-tabs__info">
+                                 <div class="item-tabs__name">Lagkapten/Adils</div>
+                                 <div class="item-tabs__prices">
+                                    <div class="item-tabs__price">Rp. 849.100</div>
+                                    <div class="item-tabs__price-old"></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="tabs__item item-tabs">
+                              <div class="item-tabs__card">
+                                 <div class="item-tabs__options">
+                                    <!-- <a href="" class="item-tabs__option"></a> -->
+                                 </div>
+                                 <a href="" class="item-tabs__image">
+                                    <img src="@img/catalog/kursi/image-06.png" alt="Image">
+                                 </a>
+                              </div>
+                              <div class="item-tabs__colors">
+                                 <a href="" class="item-tabs__color item-tabs__color_black"></a>
+                                 <a href="" class="item-tabs__color item-tabs__color_grey"></a>
+                              </div>
+                              <div class="item-tabs__info">
+                                 <div class="item-tabs__name">Adils/Linmon</div>
+                                 <div class="item-tabs__prices">
+                                    <div class="item-tabs__price">Rp. 499.100</div>
+                                    <div class="item-tabs__price-old"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
                      </div>
                      <div class="tabs__body">
                         Lemari
@@ -40,6 +309,7 @@
                         Lainnya
                      </div>
                   </div>
+                  <button type="button" class="tabs__title tabs__title_button">Lihat Semua</button>
                </div>
             </div>
          </section>
