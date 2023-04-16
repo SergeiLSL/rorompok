@@ -3,16 +3,18 @@
    // .page__features
    &__features {
    }
+   // .page__koleksi
+   &__koleksi {
+   }
    // .page__catalog
    &__catalog {
    }
 }
 //========================================================================================================================================================
-
 .features {
    @include adaptiveValue("padding-top", 120, 40);
    @include adaptiveValue("padding-bottom", 120, 40);
-   background: #ebf6e8;
+   // background: #ebf6e8;
    // .features__container
    &__container {
    }
@@ -80,6 +82,94 @@
 }
 
 //========================================================================================================================================================
+.koleksi {
+   @media (min-width: $mobile) {
+      display: flex;
+   }
+   overflow: hidden;
+   // .koleksi__contant
+   &__contant {
+      flex: 0 0 100%;
+      display: flex;
+   }
+   // .koleksi__container
+   &__container {
+      max-width: rem(1260);
+      padding: 0 rem(20);
+      margin: 0 auto;
+      background-color: #b0aeae;
+   }
+   // .koleksi__body
+   &__body {
+      padding: rem(30) rem(20) rem(238) rem(10); // может быть убрать
+      @media (min-width: $mobile) {
+         width: 40%;
+         padding: rem(0) rem(20) rem(50) rem(0); // может быть убрать
+      }
+      // padding: 0 0 rem(238) 0;
+   }
+   // .koleksi__title
+   &__title {
+      font-weight: 700;
+      font-size: rem(36);
+      line-height: 133.333333%; /* 48/36 */
+      color: var(--text-accent);
+      &:not(:last-child) {
+         margin-bottom: rem(48);
+      }
+   }
+   // .koleksi__subtitle
+   &__subtitle {
+      font-weight: 500;
+      font-size: rem(20);
+      line-height: 135%; /* 27/20 */
+      color: var(--text-accent);
+      &:not(:last-child) {
+         margin-bottom: rem(8);
+      }
+   }
+   // .koleksi__text
+   &__text {
+      font-size: rem(16);
+      line-height: 175%; /* 28/16 */
+      color: var(--text-primary);
+      &:not(:last-child) {
+         margin-bottom: rem(16);
+      }
+   }
+   // .koleksi__price
+   &__price {
+      font-weight: 700;
+      font-size: rem(30);
+      line-height: 136.666667%; /* 41/30 */
+      color: var(--bg-accent-yellow);
+   }
+   // .koleksi__image
+   &__image {
+      position: relative;
+      img {
+         max-width: 100%;
+      }
+      @media (min-width: $mobile) {
+         flex: 0 0 60%;
+         flex: 0 0 calc(((100vw - 40px) * 0.6) + 20px);
+         padding: 0 0 40.7% 0;
+         transform: translate(-100%, 0);
+         img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+         }
+      }
+      @media (min-width:rem(1260)){
+         // flex: 0 0 calc(100vw - (((100vw - 1260px) / 2) + ((1260px - 40px) * 0.4) + 20px));
+         flex: 0 0 calc(50vw - (0.4 - 0.5) * 1220px);
+      }
+   }
+}
 
 //====================================================================================================
 .catalog {
